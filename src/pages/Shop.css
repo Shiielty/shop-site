@@ -1,0 +1,49 @@
+.shop-header {
+  padding: 100px 150px;
+  padding-bottom: 50px;
+  background: url("../../public/shop-header-img.jpg") no-repeat center -300px fixed;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.shop-header .bg-tint {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.shop-header h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.shop-header h2,
+.shop-header p {
+  position: relative;
+  z-index: 1;
+}
+
+.product-wrapper {
+  background: rgb(255, 250, 240);
+  padding: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.product {
+  flex: 0 0 auto;
+  width: 250px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+}
