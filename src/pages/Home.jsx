@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Home.css";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
           </NavLink>
         </div>
       </section>
-      <section className="home-info">Test</section>
+      <Footer />
     </>
   );
 }
