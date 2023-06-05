@@ -1,17 +1,8 @@
-import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./Home.css";
 import Footer from "../components/Footer";
-import AmountCartContext from "../AmountCartContext";
 
 export default function Home() {
-  const [amountCart] = useContext(AmountCartContext);
-  const totalAmount = amountCart.reduce(
-    (sum, nextItem) => sum + nextItem.amount,
-    0,
-  );
-  console.log(totalAmount);
-
   return (
     <>
       <section className="hero">
