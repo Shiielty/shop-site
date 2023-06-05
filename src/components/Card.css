@@ -1,0 +1,11 @@
+.product {
+  flex: 0 0 auto;
+  width: 250px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+}
