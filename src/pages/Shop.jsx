@@ -1,3 +1,4 @@
+import Card from "../components/Card";
 import Footer from "../components/Footer";
 import "./Shop.css";
 
@@ -12,70 +13,15 @@ export default function Shop() {
         <div className="bg-tint"></div>
       </section>
       <section className="product-wrapper">
-        <div className="product">
-          <img src="" alt="" className="product-img" />
-          <div className="product-info">
-            <p className="product-name">Black coffee</p>
-            <p className="product-price">3$</p>
-            <button type="button">Add to cart</button>
-          </div>
-        </div>
-        <div className="product">
-          <img src="" alt="" className="product-img" />
-          <div className="product-info">
-            <p className="product-name">Black coffee</p>
-            <p className="product-price">3$</p>
-            <button type="button">Add to cart</button>
-          </div>
-        </div>
-        <div className="product">
-          <img src="" alt="" className="product-img" />
-          <div className="product-info">
-            <p className="product-name">Black coffee</p>
-            <p className="product-price">3$</p>
-            <button type="button">Add to cart</button>
-          </div>
-        </div>
-        <div className="product">
-          <img src="" alt="" className="product-img" />
-          <div className="product-info">
-            <p className="product-name">Black coffee</p>
-            <p className="product-price">3$</p>
-            <button type="button">Add to cart</button>
-          </div>
-        </div>
-        <div className="product">
-          <img src="" alt="" className="product-img" />
-          <div className="product-info">
-            <p className="product-name">Black coffee</p>
-            <p className="product-price">3$</p>
-            <button type="button">Add to cart</button>
-          </div>
-        </div>
-        <div className="product">
-          <img src="" alt="" className="product-img" />
-          <div className="product-info">
-            <p className="product-name">Black coffee</p>
-            <p className="product-price">3$</p>
-            <button type="button">Add to cart</button>
-          </div>
-        </div>
-        <div className="product">
-          <img src="" alt="" className="product-img" />
-          <div className="product-info">
-            <p className="product-name">Black coffee</p>
-            <p className="product-price">3$</p>
-            <button type="button">Add to cart</button>
-          </div>
-        </div>
-        <div className="product">
-          <img src="" alt="" className="product-img" />
-          <div className="product-info">
-            <p className="product-name">Black coffee</p>
-            <p className="product-price">3$</p>
-            <button type="button">Add to cart</button>
-          </div>
-        </div>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </section>
       <Footer />
     </div>
