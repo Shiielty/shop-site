@@ -1,8 +1,9 @@
-import Card from "../components/Card";
+/* eslint-disable react/prop-types */
+import Cards from "../components/Cards";
 import Footer from "../components/Footer";
 import "./Shop.css";
 
-export default function Shop() {
+export default function Shop({ coffeeData }) {
   return (
     <div className="shop">
       <section className="shop-header">
@@ -12,17 +13,7 @@ export default function Shop() {
         </p>
         <div className="bg-tint"></div>
       </section>
-      <section className="product-wrapper">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </section>
+      <Cards coffeeData={coffeeData} />
       <Footer />
     </div>
   );
