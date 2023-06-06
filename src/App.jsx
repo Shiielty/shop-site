@@ -3,6 +3,7 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
+  // HashRouter,
 } from "react-router-dom";
 import { useState } from "react";
 import AmountCartContext from "./AmountCartContext";
@@ -23,6 +24,9 @@ const router = createBrowserRouter(
       <Route path="cart" element={<Cart coffeeData={data} />} />
     </Route>,
   ),
+  {
+    basename: import.meta.env.DEV ? "/" : "/site-shop/",
+  },
 );
 
 const initialData = [];
@@ -34,9 +38,11 @@ data.forEach((item) => {
 function App() {
   const amountCart = useState(initialData);
   return (
+    // <HashRouter>
     <AmountCartContext.Provider value={amountCart}>
       <RouterProvider router={router} />
     </AmountCartContext.Provider>
+    // </HashRouter>
   );
 }
 
