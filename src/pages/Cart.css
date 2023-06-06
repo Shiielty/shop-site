@@ -104,6 +104,11 @@
   color: white;
   font-size: 1rem;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.cart > div:last-of-type button:hover {
+  box-shadow: rgba(0, 0, 0, 0.256) 0 3px 3px;
 }
 
 .checkout-btn {
