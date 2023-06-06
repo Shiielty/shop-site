@@ -42,3 +42,9 @@ nav > div > i {
   height: 30px;
   padding-top: 0.5em;
 }
+
+@media only screen and (max-width: 450px) {
+  nav {
+    gap: 40px;
+  }
+}

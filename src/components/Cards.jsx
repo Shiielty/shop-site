@@ -22,42 +22,48 @@ export default function Cards({ coffeeData }) {
 
   return (
     <section className="product-wrapper">
-      {coffeeData.map((coffee) => (
-        <div className="product" key={coffee.id}>
-          <img src={coffee.imgUrl} alt={coffee.name} className="product-img" />
-          <div className="product-info">
-            <p className="product-name">{coffee.name}</p>
-            <p className="product-price">{coffee.price}</p>
-            {amountCart[coffee.id].amount === 0 ? (
-              <button
-                type="button"
-                className="first-add-btn"
-                onClick={() => handleAdd(coffee.id)}
-              >
-                Add to cart
-              </button>
-            ) : (
-              <div className="amount-container">
+      <div className="grid-wrapper">
+        {coffeeData.map((coffee) => (
+          <div className="product" key={coffee.id}>
+            <img
+              src={coffee.imgUrl}
+              alt={coffee.name}
+              className="product-img"
+            />
+            <div className="product-info">
+              <p className="product-name">{coffee.name}</p>
+              <p className="product-price">{coffee.price}</p>
+              {amountCart[coffee.id].amount === 0 ? (
                 <button
                   type="button"
-                  className="add-btn"
-                  onClick={() => handleRemove(coffee.id)}
-                >
-                  <i className="fa-solid fa-minus"></i>
-                </button>
-                <span>{amountCart[coffee.id].amount}</span>
-                <button
-                  type="button"
-                  className="remove-btn"
+                  className="first-add-btn"
                   onClick={() => handleAdd(coffee.id)}
                 >
-                  <i className="fa-solid fa-plus"></i>
+                  Add to cart
                 </button>
-              </div>
-            )}
+              ) : (
+                <div className="amount-container">
+                  <button
+                    type="button"
+                    className="add-btn"
+                    onClick={() => handleRemove(coffee.id)}
+                  >
+                    <i className="fa-solid fa-minus"></i>
+                  </button>
+                  <span>{amountCart[coffee.id].amount}</span>
+                  <button
+                    type="button"
+                    className="remove-btn"
+                    onClick={() => handleAdd(coffee.id)}
+                  >
+                    <i className="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }
