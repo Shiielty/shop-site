@@ -1,7 +1,7 @@
 .shop-header {
   padding: 100px 0;
   padding-bottom: 50px;
-  background: url("/shop-header-img.jpg") no-repeat center -300px fixed;
+  background: url("./shop-header-img.jpg") no-repeat center -300px fixed;
   background-size: cover;
   color: white;
   position: relative;

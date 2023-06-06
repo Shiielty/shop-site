@@ -26,7 +26,7 @@ export default function Cards({ coffeeData }) {
         {coffeeData.map((coffee) => (
           <div className="product" key={coffee.id}>
             <img
-              src={`/${coffee.imgUrl}`}
+              src={`./${coffee.imgUrl}`}
               alt={coffee.name}
               className="product-img"
             />
