@@ -13,12 +13,14 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 
 import data from "./data";
+import Cart from "./pages/Cart";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+    <Route path="/" element={<RootLayout coffeeData={data} />}>
       <Route index element={<Home />} />
       <Route path="shop" element={<Shop coffeeData={data} />} />
+      <Route path="cart" element={<Cart coffeeData={data} />} />
     </Route>,
   ),
 );

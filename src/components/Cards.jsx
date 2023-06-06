@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unknown-property */
-/* eslint-disable react/prop-types */
 import { useContext } from "react";
 import "./Cards.css";
 import AmountCartContext from "../AmountCartContext";

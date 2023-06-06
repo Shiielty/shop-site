@@ -20,6 +20,7 @@
     "react/react-in-jsx-scope": ["off"],
     "react/jsx-props-no-spreading": ["warn"],
     "import/no-extraneous-dependencies": ["warn"],
-    "react/self-closing-comp": ["off"]
+    "react/self-closing-comp": ["off"],
+    "react/prop-types": ["off"]
   }
 }

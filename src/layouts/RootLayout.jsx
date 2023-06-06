@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Cart from "../pages/Cart";
 
-export default function RootLayout() {
+export default function RootLayout({ coffeeData }) {
   return (
     <>
       <header>
@@ -10,6 +11,7 @@ export default function RootLayout() {
       <main>
         <Outlet />
       </main>
+      <Cart coffeeData={coffeeData} />
     </>
   );
 }
