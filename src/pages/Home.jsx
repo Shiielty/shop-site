@@ -1,8 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="hero">
@@ -14,9 +16,9 @@ export default function Home() {
             <p>Crafted with Passion</p>
             <p>Discover the Perfect Cup at Our Coffee Shop</p>
           </div>
-          <NavLink to="shop" id="hero-btn">
+          <button type="button" onClick={() => navigate("shop")} id="hero-btn">
             Check Our Shop
-          </NavLink>
+          </button>
         </div>
       </section>
       <Footer />

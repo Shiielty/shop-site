@@ -36,8 +36,9 @@ h2:last-of-type {
   font-style: italic;
 }
 
-#hero-btn {
+button#hero-btn {
   display: inline-block;
+  font-size: 1rem;
   font-weight: 700;
   padding: 0.5em 1em;
   background-color: orange;

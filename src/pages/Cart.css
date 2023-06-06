@@ -83,7 +83,7 @@
   cursor: pointer;
 }
 
-.cart div:last-of-type {
+.cart > div:last-of-type {
   text-align: center;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .cart > div:last-of-type button:hover {
-  box-shadow: rgba(0, 0, 0, 0.256) 0 3px 3px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 3px 3px;
 }
 
 .checkout-btn {
