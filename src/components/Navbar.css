@@ -8,10 +8,37 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 80px;
+  z-index: 1;
 }
 
 nav a {
   text-decoration: none;
   color: white;
   text-shadow: black 0 2px 5px;
+}
+
+nav > div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav > div > span {
+  color: black;
+  background-color: white;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding-top: 0.2em;
+  border-radius: 0 10px 10px 0;
+}
+
+nav > div > i {
+  color: white;
+  background-color: black;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  padding-top: 0.5em;
 }

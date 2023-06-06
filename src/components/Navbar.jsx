@@ -9,13 +9,23 @@ function Navbar() {
     (sum, nextItem) => sum + nextItem.amount,
     0,
   );
-  console.log(totalAmount);
+
+  const handleOpenCart = () => {
+    const cartBg = document.querySelector(".cart-bg");
+    const cart = document.querySelector(".cart");
+
+    cartBg.style.display = "block";
+    cart.style.display = "block";
+  };
 
   return (
-    <nav className="bg-orange-700">
+    <nav>
       <NavLink to="/">Home</NavLink>
       <NavLink to="shop">Shop</NavLink>
-      <NavLink to="cart">Cart | {totalAmount}</NavLink>
+      <div type="button" onClick={handleOpenCart}>
+        <i className="fa-solid fa-cart-shopping"></i>
+        <span>{totalAmount}</span>
+      </div>
     </nav>
   );
 }

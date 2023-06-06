@@ -20,18 +20,27 @@ export default function Cart({ coffeeData }) {
 
     setAmountCart(newAmount);
   };
+
+  const handleClose = () => {
+    const cartBg = document.querySelector(".cart-bg");
+    const cart = document.querySelector(".cart");
+
+    cartBg.style.display = "none";
+    cart.style.display = "none";
+  };
+
   return (
     <>
-      <div className="cart-bg"></div>
-      <section className="cart">
+      <div className="cart-bg" onClick={handleClose}></div>
+      <div className="cart">
         <h2>Shopping Cart</h2>
         <div className="cart-container">
           {coffeeData.some((coffee) => amountCart[coffee.id].amount > 0)
             ? coffeeData
                 .filter((coffee) => amountCart[coffee.id].amount > 0)
                 .map((coffee) => (
-                  <div className="cart-item">
-                    <img src={coffee.imgUrl} alt="" srcset="" />
+                  <div className="cart-item" key={coffee.id}>
+                    <img src={coffee.imgUrl} alt={coffee.name} />
                     <div className="cart-item-info">
                       <p>{coffee.name}</p>
                       <p>{coffee.price * amountCart[coffee.id].amount}</p>
@@ -42,7 +51,7 @@ export default function Cart({ coffeeData }) {
                         className="add-btn"
                         onClick={() => handleRemove(coffee.id)}
                       >
-                        <i class="fa-solid fa-minus"></i>
+                        <i className="fa-solid fa-minus"></i>
                       </button>
                       <span>{amountCart[coffee.id].amount}</span>
                       <button
@@ -50,7 +59,7 @@ export default function Cart({ coffeeData }) {
                         className="remove-btn"
                         onClick={() => handleAdd(coffee.id)}
                       >
-                        <i class="fa-solid fa-plus"></i>
+                        <i className="fa-solid fa-plus"></i>
                       </button>
                     </div>
                   </div>
@@ -69,11 +78,11 @@ export default function Cart({ coffeeData }) {
           <button type="button" className="checkout-btn">
             Checkout
           </button>
-          <button type="button" className="close-btn">
+          <button type="button" className="close-btn" onClick={handleClose}>
             Close
           </button>
         </div>
-      </section>
+      </div>
     </>
   );
 }

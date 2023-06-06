@@ -23,7 +23,7 @@ export default function Cards({ coffeeData }) {
   return (
     <section className="product-wrapper">
       {coffeeData.map((coffee) => (
-        <div className="product" key={coffee.key}>
+        <div className="product" key={coffee.id}>
           <img src={coffee.imgUrl} alt={coffee.name} className="product-img" />
           <div className="product-info">
             <p className="product-name">{coffee.name}</p>
@@ -43,7 +43,7 @@ export default function Cards({ coffeeData }) {
                   className="add-btn"
                   onClick={() => handleRemove(coffee.id)}
                 >
-                  <i class="fa-solid fa-minus"></i>
+                  <i className="fa-solid fa-minus"></i>
                 </button>
                 <span>{amountCart[coffee.id].amount}</span>
                 <button
@@ -51,7 +51,7 @@ export default function Cards({ coffeeData }) {
                   className="remove-btn"
                   onClick={() => handleAdd(coffee.id)}
                 >
-                  <i class="fa-solid fa-plus"></i>
+                  <i className="fa-solid fa-plus"></i>
                 </button>
               </div>
             )}
