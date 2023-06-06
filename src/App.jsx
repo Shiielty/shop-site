@@ -25,7 +25,7 @@ const router = createBrowserRouter(
     </Route>,
   ),
   {
-    basename: import.meta.env.DEV ? "/" : "/site-shop/",
+    basename: import.meta.env.DEV ? "/" : "/shop-site/",
   },
 );
 
