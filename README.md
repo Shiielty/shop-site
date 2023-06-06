@@ -4,8 +4,8 @@ Check live preview [here](https://shiielty.github.io/shop-site/)!
 
 ## Screenshot
 
-![Home Page](./public/readme/screenshot-home.png)
-![Shop Page](./public/readme/screenshot-shop.png)
+![Home Page](/readme/screenshot-home.png)
+![Shop Page](/readme/screenshot-shop.png)
 
 ## Credit:
 
