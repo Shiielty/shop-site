@@ -5,7 +5,11 @@ export default function Footer() {
     <footer>
       <p>
         Copyright © 2023 |{" "}
-        <a href="https://github.com/Shiielty" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/Shiielty/shop-site"
+          target="_blank"
+          rel="noreferrer"
+        >
           Shiielty <i className="fa-brands fa-github"></i>
         </a>
       </p>

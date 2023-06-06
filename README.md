@@ -1,6 +1,13 @@
 # Project: Coffee Shop
 
-Photo Credit:
+Check live preview [here](https://shiielty.github.io/shop-site/)!
+
+## Screenshot
+
+![Home Page](./public/readme/screenshot-home.png)
+![Shop Page](./public/readme/screenshot-shop.png)
+
+## Credit:
 
 - Photo on hero background by [Jessica Lewis](https://unsplash.com/pt-br/@jessicalewiscreative)
 - Photo on Shop page by [Nathan Dumlao](https://unsplash.com/@nate_dumlao)
